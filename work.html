@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=0.5,user-scalable=no">
+        <title>Joann Chung</title>
+        <style>
+
+            /* Demo styles */
+            html,body{background:#fff;margin:0;}
+            body{border-top:4px solid #eee;}
+            .content{color:#777;font:12px/1.4 "helvetica neue",arial,sans-serif;max-width:820px;margin:20px auto;}
+            h1{font-size:12px;font-weight:normal;color:#222;margin:0;}
+            p{margin:0 0 20px}
+            a {color:#22BCB9;text-decoration:none;}
+            .galleria-info-description a { color: #bbb;}
+            .cred{margin-top:20px;font-size:11px;}
+
+            .galleria{ height: 432px; max-width:820px; }
+
+        </style>
+        <!-- load jQuery -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.js"></script> -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+
+        <!-- load Galleria -->
+        <script src="galleria.js"></script>
+
+
+    </head>
+<body>
+    <div class="content">
+        <h1>Joann Chung</h1>
+        <nav><p><a href="index.html">about</a> <a href="work.html">work</a> <a href="art.html">art</a> <a href="travel.html">travel</a> </p> </nav>
+
+        <p>Some of the past projects I've worked on: </p> 
+        <div class="galleria">
+            <a href="WORK/1.jpg">
+                <img src="WORK/thumbs/1.JPG" data-title="MIRA SF" data-description="160 Folsom, San Francisco" >
+            </a>
+            <a href="WORK/2.jpg">
+                <img src="WORK/thumbs/2.JPG" data-title="MIRA SF" data-description="160 Folsom, San Francisco">
+            </a>
+            <a href="WORK/3.jpg">
+                <img src="WORK/thumbs/3.JPG" data-title="Facebook's Park Tower" data-description="250 Howard, San Francisco">
+            </a>
+            <a href="WORK/4.jpg">
+                <img src="WORK/thumbs/4.JPG" data-title="Facebook's Park Tower" data-description="250 Howard, San Francisco">
+            </a>
+        </div>
+        <p> I'm interested in how the built environment affects human interaction. I'm excited for the future of construction and technology.
+            <br> My other professional interests include data science, property investment, and city planning and policy.
+        </p>
+
+        <p> 2019: Webcor Builders at Facebook's Park Tower at Transbay <br> 2019: WeWork; Design Intern 
+            <br> 2018: Lendlease; MIRA SF 
+            <br> 2017: City of Oakland Department of Transportation: GIS 
+            <br> 2017: UC Berkeley College of Engineering Research Fellowship
+        </p>
+   
+
+    </div>
+
+    <script>
+        $(function() {
+            // Load the Folio theme
+            Galleria.loadTheme('galleria.folio.js');
+    
+            // Initialize Galleria
+            Galleria.run('.galleria');
+        });
+        </script>
+
+    </body>
+</html>
